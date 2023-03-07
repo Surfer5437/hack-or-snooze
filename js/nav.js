@@ -32,5 +32,15 @@ function updateNavOnLogin() {
   $(".main-nav-links").show();
   $navLogin.hide();
   $navLogOut.show();
+  $navcreatestory.show()
   $navUserProfile.text(`${currentUser.username}`).show();
+}
+
+
+$navcreatestory.on("click", navCreateStoryClick);
+
+function navCreateStoryClick(){
+  
+  console.debug("create story button");
+  $createStoryForm.show()
 }

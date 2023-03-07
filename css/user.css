@@ -12,3 +12,7 @@
 .account-forms-container {
   padding-left: 20px;
 }
+
+#new-story-form button {
+  width: 8rem;
+}

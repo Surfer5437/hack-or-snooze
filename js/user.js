@@ -114,3 +114,10 @@ function updateUIOnUserLogin() {
 
   updateNavOnLogin();
 }
+
+function updateUIOnNewStory() {
+  console.debug("updateUIOnNewStory");
+
+  $allStoriesList.show();
+$createStoryForm.hide();
+}
