@@ -72,13 +72,19 @@ class StoryList {
    *
    * Returns the new Story instance
    */
-
+  // let newStory = await storyList.addStory(currentUser,
+  //   {title: "Test", author: "Me", url: "http://meow.com"});
+//   async addStory(username, newStory) {
+//     const newSt = {username, "story": newStory }
+//     const res = await axios.post(`${BASE_URL}/stories`,newSt)
+// return res;
+//   }
   async addStory(username, newStory) {
-    const res = await axios.post(`${BASE_URL}/stories`, newStory)
-
+    const res = await axios.post(`${BASE_URL}/stories`,{"token":localStorage.token, "story": newStory })
+    console.log(newSt instanceof Story)
+return res;
   }
 }
-
 
 /******************************************************************************
  * User: a user in the system (only used to represent the current user)
